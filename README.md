@@ -65,8 +65,6 @@ hyperparameters: `learning_rate=0.15`, `max_depth=8`, `min_child_weight=1`,
 - Outliers were intentionally retained, as they are considered natural morphological 
 variation in biological datasets.
 - Three highly correlated features were removed during preprocessing (correlation > 0.95).
-- Class imbalance was addressed using `class_weight='balanced'` in Random Forest and 
-`scale_pos_weight` in XGBoost.
 - Spirogyra was the most challenging class to predict (F1: 0.88) due to its limited 
 representation in the dataset (122 test samples).
 
