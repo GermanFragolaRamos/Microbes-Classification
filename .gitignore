@@ -1,0 +1,15 @@
+# Data
+Data/raw/microbes.csv
+Data/processed/
+models/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code / Cursor
+.vscode/
