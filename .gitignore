@@ -1,7 +1,12 @@
 # Data
-Data/raw/microbes.csv
-Data/processed/
-models/
+Data/raw/*
+!Data/raw/.gitkeep
+
+Data/processed/*
+!Data/processed/.gitkeep
+
+models/*
+!models/.gitkeep
 
 # Python
 __pycache__/
