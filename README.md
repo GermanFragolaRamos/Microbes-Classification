@@ -47,11 +47,13 @@ Ulothrix, Volvox, and Yeast.
 
 ## Models
 
-Two classification models were trained and evaluated:
+Four classification models were trained and evaluated:
 
 | Model | Accuracy | F1 Macro | F1 Weighted |
 |---|---|---|---|
 | Random Forest | 0.9777 | 0.9670 | 0.9778 |
+| Random Forest (GridSearchCV) | 0.9777 | 0.9670 | 0.9778 |
+| XGBoost | 0.9777 | 0.9670 | 0.9778 |
 | XGBoost (GridSearchCV) | 0.9916 | 0.9821 | 0.9914 |
 
 The best performing model was **XGBoost with GridSearchCV** with the following 
@@ -65,8 +67,6 @@ hyperparameters: `learning_rate=0.15`, `max_depth=8`, `min_child_weight=1`,
 - Outliers were intentionally retained, as they are considered natural morphological 
 variation in biological datasets.
 - Three highly correlated features were removed during preprocessing (correlation > 0.95).
-- Class imbalance was addressed using `class_weight='balanced'` in Random Forest and 
-`scale_pos_weight` in XGBoost.
 - Spirogyra was the most challenging class to predict (F1: 0.88) due to its limited 
 representation in the dataset (122 test samples).
 
