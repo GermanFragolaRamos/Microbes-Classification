@@ -51,9 +51,9 @@ Four classification models were trained and evaluated:
 
 | Model | Accuracy | F1 Macro | F1 Weighted |
 |---|---|---|---|
-| Random Forest | 0.9777 | 0.9670 | 0.9778 |
+| Random Forest | 0.9050 | 0.9024 | 0.9086 |
 | Random Forest (GridSearchCV) | 0.9777 | 0.9670 | 0.9778 |
-| XGBoost | 0.9777 | 0.9670 | 0.9778 |
+| XGBoost | 0.9745 | 0.9669 | 0.9741 |
 | XGBoost (GridSearchCV) | 0.9916 | 0.9821 | 0.9914 |
 
 The best performing model was **XGBoost with GridSearchCV** with the following 
